@@ -9,7 +9,7 @@ public class ObserveEventComponent2 : MonoBehaviour
     [SerializeField]
     private CountDownEventProvider _CountDownEventProvider = null;
 
-    private PrintLogObserver<int> _PrintLogObserver = null;
+    // private PrintLogObserver<int> _PrintLogObserver = null;
 
     private IDisposable _Disposable = null;
 

@@ -486,6 +486,8 @@ GameObject:
   - component: {fileID: 1744206640}
   - component: {fileID: 1744206642}
   - component: {fileID: 1744206641}
+  - component: {fileID: 1744206643}
+  - component: {fileID: 1744206644}
   m_Layer: 5
   m_Name: GameObject
   m_TagString: Untagged
@@ -538,6 +540,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _CountDownEventProvider: {fileID: 1744206641}
+--- !u!114 &1744206643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744206639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1de8f4f2ed75aa94288e1e3b97230b55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1744206644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744206639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6106f7f6edd0f4249bdc77b01c8d4f0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _CountTimeSeconds: 30
 --- !u!1 &2063909205
 GameObject:
   m_ObjectHideFlags: 0
