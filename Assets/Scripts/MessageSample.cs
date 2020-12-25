@@ -55,6 +55,16 @@ public class MessageSample : MonoBehaviour
         subject2.OnCompleted();
         subject2.Dispose();
 
+        var subject3 = new Subject<int>();
+
+        var observable3 = subject3.Do(p => Debug.Log("Do:" + p));
+
+        observable3.Subscribe(p => Debug.Log("Sub1:" + p));
+        observable3.Subscribe(p => Debug.Log("Sub2:" + p));
+
+        subject3.OnNext(1);
+        subject3.OnCompleted();
+        subject3.Dispose();
     }
 
     // Update is called once per frame
