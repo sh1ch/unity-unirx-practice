@@ -50,8 +50,8 @@ public class DownloadImage : MonoBehaviour
         using (var webRequest = UnityWebRequestTexture.GetTexture(uri))
         {
             yield return webRequest.SendWebRequest();
-
-            if (webRequest.isNetworkError || webRequest.isHttpError)
+            
+            if (webRequest.result == UnityWebRequest.Result.ConnectionError || webRequest.result == UnityWebRequest.Result.ProtocolError)
             {
                 observer.OnError(new Exception(webRequest.error));
 
